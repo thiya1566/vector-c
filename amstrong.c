@@ -18,7 +18,7 @@ int intPow(int base, int exp) {
 int main() {
     int number, original, digitCount, digit, sum = 0;
 
-    // 1. Read the number from the user
+    
     printf("Enter a positive integer: ");
     scanf("%d", &number);
 
