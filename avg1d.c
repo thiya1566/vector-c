@@ -1,23 +1,17 @@
-#include<Stdio.h>
-void ar(int num,int numm);
-main()
+#include<stdio.h>
+void avg(int,int);
+int main()
 {
-    int arr[100],c=0;
-    printf("enter the number:");
-    for(int i=0;i<arr;i++)
+    int arr[100],count=0,sum=0;
+    while(scanf("%d",&arr[count])==1)
     {
-    scanf("%d",&arr[i]);
-    ar(arr[i]);
-    sum=sum+arr[i];
+        sum+=arr[count];
+        count++;
     }
-    ar(sum);
-    
-    //return sum;
+    avg(sum,count);
+    return 0;
 }
-void ar(int num,int numm);
+void avg(int sum,int count)
 {
-    if(num>0)
-    {
-        z
-    }
+    printf("avg %.2f\n",(float)sum/count);
 }
